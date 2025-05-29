@@ -1,0 +1,29 @@
+@use '@angular/material' as mat;
+
+$primary: mat.define-palette(mat.$deep-purple-palette, 500, 300, 700);
+$accent: mat.define-palette(mat.$green-palette, 500, 300, 700);
+$warn: mat.define-palette(mat.$red-palette);
+
+$theme: mat.define-dark-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+  ),
+  typography: $typography-config,
+  density:0
+));
+
+@include mat.all-component-themes($theme);
+
+// html {
+//   @include mat.theme((
+//     color: (
+//       theme-type: light,
+//       primary: mat.$azure-palette,
+//       tertiary: mat.$blue-palette,
+//     ),
+//     typography: Roboto,
+//     density: 0,
+//   ));
+// }

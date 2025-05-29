@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+
+// 🎨 Define your GameZone typography using Orbitron
+$gamezone-typography: mat.define-typography-config(
+  $font-family: 'Orbitron, Roboto, sans-serif',
+
+  $headline-1: mat.define-typography-level(96px, 96px, 700, -1.5px),
+  $headline-2: mat.define-typography-level(60px, 64px, 600, -0.5px),
+  $headline-3: mat.define-typography-level(48px, 52px, 600, 0),
+  $headline-4: mat.define-typography-level(34px, 40px, 600, 0.25px),
+  $headline-5: mat.define-typography-level(24px, 32px, 600, 0),
+  $headline-6: mat.define-typography-level(20px, 28px, 600, 0.15px),
+
+  $subtitle-1: mat.define-typography-level(16px, 24px, 600, 0.15px),
+  $subtitle-2: mat.define-typography-level(14px, 21px, 600, 0.1px),
+
+  $body-1: mat.define-typography-level(16px, 24px, 400, 0.5px),
+  $body-2: mat.define-typography-level(14px, 20px, 400, 0.25px),
+
+  $button: mat.define-typography-level(14px, 14px, 700, 1.25px),
+  $caption: mat.define-typography-level(12px, 16px, 400, 0.4px),
+  $overline: mat.define-typography-level(10px, 14px, 400, 1.5px)
+);
